@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+
+  //- Variable block for page-specific info
+  block vars
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    title #{title}
+    meta(name='description', content='#{description}')
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/main.css")
+
+  body.cf
+
+    header
+      h1 A Single Div :
+      p a CSS drawing project by 
+        a(href="https://twitter.com/lynnandtonic") Lynn Fisher
+      a.share-link(href="http://ctt.ec/5Dgbr") Tweet
+
+    block content
+
+    include includes/ga.html
